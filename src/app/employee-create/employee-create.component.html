@@ -1,0 +1,50 @@
+<div class="container custom-container">
+  <div class="col-md-12">
+    <p class="h2 mb-3 text-center">Create Employee</p>
+    <div class="form-group mb-3">
+      <label for="empid" class="form-label">Employee ID:</label>
+      <input
+        id="empid"
+        type="text"
+        [(ngModel)]="employeeDetails.id"
+        class="form-control"
+        placeholder="Id"
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="empfirst" class="form-label">Employee First Name:</label>
+      <input
+        is="empfirst"
+        type="text"
+        [(ngModel)]="employeeDetails.firstName"
+        class="form-control"
+        placeholder="First Name"
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="emplast" class="form-label">Employee Last Name:</label>
+      <input
+        id="emplast"
+        type="text"
+        [(ngModel)]="employeeDetails.lastName"
+        class="form-control"
+        placeholder="Last Name"
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="empemail" class="form-label">Employee EmailId:</label>
+      <input
+        id="empemail"
+        type="text"
+        [(ngModel)]="employeeDetails.emailId"
+        class="form-control"
+        placeholder="Email"
+      />
+    </div>
+    <div class="form-group mb-3">
+      <button class="btn btn-success" (click)="addEmployee(employeeDetails)">
+        Create Employee
+      </button>
+    </div>
+  </div>
+</div>
